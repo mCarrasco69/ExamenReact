@@ -6,13 +6,13 @@ import ListadoEmpleados from './components/ListadoEmpleados';
 function App() {
   return (
     <EmpleadosProvider>
-      <div className="min-h-screen bg-gradient-to-br from-violet-950 via-purple-900 to-fuchsia-900 py-8 px-4">
+      <div className="min-h-screen bg-gradient-to-br from-slate-950 via-blue-900 to-gray-900 py-8 px-4">
         <div className="max-w-6xl mx-auto">
           <header className="text-center mb-8">
-            <h1 className="text-5xl font-black bg-gradient-to-r from-pink-300 via-purple-200 to-cyan-300 bg-clip-text text-transparent mb-2">
+            <h1 className="text-5xl font-black bg-gradient-to-r from-blue-400 via-orange-400 to-amber-300 bg-clip-text text-transparent mb-2">
               Sistema de Gestión de Empleados
             </h1>
-            <p className="text-purple-200 text-lg">
+            <p className="text-blue-300 text-lg">
               Administra y gestiona la información de tus empleados
             </p>
           </header>

@@ -91,13 +91,13 @@ const FormularioEmpleado = () => {
   };
 
   return (
-    <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-xl shadow-2xl p-8 mb-8 border border-purple-500/30 backdrop-blur">
-      <h2 className="text-3xl font-bold bg-gradient-to-r from-pink-400 to-purple-400 bg-clip-text text-transparent mb-6">Agregar Nuevo Empleado</h2>
+    <div className="bg-gradient-to-br from-slate-800 to-gray-900 rounded-xl shadow-2xl p-4 mb-6 border border-blue-500/30 backdrop-blur">
+      <h2 className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-orange-400 bg-clip-text text-transparent mb-4">Agregar Nuevo Empleado</h2>
       
-      <form onSubmit={handleSubmit} className="space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-3">
         <div>
-          <label htmlFor="nombre" className="block text-sm font-semibold text-purple-300 mb-2">
-            Nombre Completo <span className="text-pink-400 text-lg">*</span>
+          <label htmlFor="nombre" className="block text-xs font-semibold text-blue-300 mb-1">
+            Nombre Completo <span className="text-orange-400">*</span>
           </label>
           <input
             type="text"
@@ -105,21 +105,21 @@ const FormularioEmpleado = () => {
             name="nombre"
             value={formData.nombre}
             onChange={handleChange}
-            className={`w-full px-4 py-2 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+            className={`w-full px-3 py-1.5 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors text-sm ${
               errors.nombre
                 ? 'border-red-500 focus:ring-red-500 text-red-100'
-                : 'border-purple-500/50 focus:ring-pink-500 text-white placeholder-slate-400'
+                : 'border-blue-500/50 focus:ring-orange-400 text-white placeholder-slate-400'
             }`}
             placeholder="Ingrese el nombre completo"
           />
           {errors.nombre && (
-            <p className="mt-1 text-sm text-red-400 font-medium">{errors.nombre}</p>
+            <p className="mt-0.5 text-xs text-red-400 font-medium">{errors.nombre}</p>
           )}
         </div>
 
         <div>
-          <label htmlFor="dni" className="block text-sm font-semibold text-purple-300 mb-2">
-            DNI <span className="text-pink-400 text-lg">*</span>
+          <label htmlFor="dni" className="block text-xs font-semibold text-blue-300 mb-1">
+            DNI <span className="text-orange-400">*</span>
           </label>
           <input
             type="text"
@@ -127,21 +127,21 @@ const FormularioEmpleado = () => {
             name="dni"
             value={formData.dni}
             onChange={handleChange}
-            className={`w-full px-4 py-2 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+            className={`w-full px-3 py-1.5 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors text-sm ${
               errors.dni
                 ? 'border-red-500 focus:ring-red-500 text-red-100'
-                : 'border-purple-500/50 focus:ring-pink-500 text-white placeholder-slate-400'
+                : 'border-blue-500/50 focus:ring-orange-400 text-white placeholder-slate-400'
             }`}
             placeholder="Ingrese el DNI"
           />
           {errors.dni && (
-            <p className="mt-1 text-sm text-red-400 font-medium">{errors.dni}</p>
+            <p className="mt-0.5 text-xs text-red-400 font-medium">{errors.dni}</p>
           )}
         </div>
 
         <div>
-          <label htmlFor="direccion" className="block text-sm font-semibold text-purple-300 mb-2">
-            Dirección <span className="text-pink-400 text-lg">*</span>
+          <label htmlFor="direccion" className="block text-xs font-semibold text-blue-300 mb-1">
+            Dirección <span className="text-orange-400">*</span>
           </label>
           <input
             type="text"
@@ -149,21 +149,21 @@ const FormularioEmpleado = () => {
             name="direccion"
             value={formData.direccion}
             onChange={handleChange}
-            className={`w-full px-4 py-2 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+            className={`w-full px-3 py-1.5 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors text-sm ${
               errors.direccion
                 ? 'border-red-500 focus:ring-red-500 text-red-100'
-                : 'border-purple-500/50 focus:ring-pink-500 text-white placeholder-slate-400'
+                : 'border-blue-500/50 focus:ring-orange-400 text-white placeholder-slate-400'
             }`}
             placeholder="Ingrese la dirección"
           />
           {errors.direccion && (
-            <p className="mt-1 text-sm text-red-400 font-medium">{errors.direccion}</p>
+            <p className="mt-0.5 text-xs text-red-400 font-medium">{errors.direccion}</p>
           )}
         </div>
 
         <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-purple-300 mb-2">
-            Email <span className="text-pink-400 text-lg">*</span>
+          <label htmlFor="email" className="block text-xs font-semibold text-blue-300 mb-1">
+            Email <span className="text-orange-400">*</span>
           </label>
           <input
             type="email"
@@ -171,25 +171,25 @@ const FormularioEmpleado = () => {
             name="email"
             value={formData.email}
             onChange={handleChange}
-            className={`w-full px-4 py-2 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors ${
+            className={`w-full px-3 py-1.5 bg-slate-700 border-2 rounded-lg focus:outline-none focus:ring-2 transition-colors text-sm ${
               errors.email
                 ? 'border-red-500 focus:ring-red-500 text-red-100'
-                : 'border-purple-500/50 focus:ring-pink-500 text-white placeholder-slate-400'
+                : 'border-blue-500/50 focus:ring-orange-400 text-white placeholder-slate-400'
             }`}
             placeholder="ejemplo@correo.com"
           />
           {errors.email && (
-            <p className="mt-1 text-sm text-red-400 font-medium">{errors.email}</p>
+            <p className="mt-0.5 text-xs text-red-400 font-medium">{errors.email}</p>
           )}
         </div>
 
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-3 px-4 rounded-lg font-bold text-white transition-all transform hover:scale-105 ${
+          className={`w-full py-2 px-4 rounded-lg font-bold text-sm text-white transition-all transform hover:scale-105 ${
             isSubmitting
               ? 'bg-slate-600 cursor-not-allowed'
-              : 'bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-pink-500 focus:ring-offset-2 focus:ring-offset-slate-900 shadow-lg'
+              : 'bg-gradient-to-r from-blue-600 to-orange-600 hover:from-blue-700 hover:to-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-slate-900 shadow-lg'
           }`}
         >
           {isSubmitting ? 'Agregando...' : 'Agregar Empleado'}
